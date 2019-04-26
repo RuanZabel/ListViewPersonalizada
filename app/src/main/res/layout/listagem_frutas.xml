@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/text2"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/labelpreco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="preço:"/>
+            <TextView
+                android:id="@+id/preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/labelprecovenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="preço venda: "/>
+            <TextView
+                android:id="@+id/preco_venda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:scaleType="fitStart"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+</LinearLayout>
