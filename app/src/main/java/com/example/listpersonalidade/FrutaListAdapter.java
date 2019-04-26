@@ -40,7 +40,7 @@ public  class FrutaListAdapter extends ArrayAdapter<Fruta> {
 
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView,  @NonNull ViewGroup parent) {
+    public View getView(int position, View convertView,  @NonNull ViewGroup parent) {
 
         LayoutInflater inflater = LayoutInflater.from(mContext);
         convertView= inflater.inflate(mResource, parent, false);
